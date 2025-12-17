@@ -1,11 +1,8 @@
 package com.example.demo.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistance.GeneratedValue;\
-import jakarta.persistance.GenerationType;
-import jakarta.persistance.Id;
+import jakarta.persistence.*;
 @Entity
-public class Stuentity{
+public class Student{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
@@ -38,13 +35,13 @@ public long getId(){
  public void setcgpa(String cgpa){
     this.cgpa=cgpa;
  }
- public Stuentity(Long id,String name, String email,float cgpa){
+ public Student(Long id,String name, String email,float cgpa){
     this.id=id;
     this.name=name;
     this.email=email;
     this.cgpa=cgpa;
  }
- public Stuentity(){
+ public Student(){
 
  }
 
